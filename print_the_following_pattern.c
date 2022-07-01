@@ -1,13 +1,17 @@
-#include <stdio.h>
-int main() {
-   int i, j, rows;
-   scanf("%d", &rows);
-   for (i = rows; i >= 1; --i) {
-      for (j = 1; j <= i; ++j) {
-         printf("%d", j);
-      }
-      printf("
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int i,j;
+    for(i=65;i<(65+n);i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            printf("%c ",i);
+        }
+         printf("
 ");
-   }
-   return 0;
+    }
+   
 }
