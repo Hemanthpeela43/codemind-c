@@ -1,21 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,j;
+    int n,i,j,k;
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    k=n+64;
+    for(i=n;i>=1;i--)
     {
-        for(j=1;j<=n;j++)
+        for(j=1;j<=i;j++)
         {
-            if(j==i)
-            {
-                printf("0");
-            }
-            else
-            {
-                printf("x");
-            }
+            printf("%c ",k);
         }
+        k--;
         printf("
 ");
     }
